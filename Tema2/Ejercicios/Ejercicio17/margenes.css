@@ -1,0 +1,18 @@
+#primeraSeccion{
+    margin: 20px;
+    background-color: red;
+}
+
+#segundaSeccion{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    background-color: orange;
+}
+
+#terceraSeccion{
+    margin:auto;
+    margin-top: 50px;
+    width: 50%;
+}

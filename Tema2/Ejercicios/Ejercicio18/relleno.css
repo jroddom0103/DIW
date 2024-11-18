@@ -1,0 +1,19 @@
+#primeraSeccion{
+    padding: 20px;
+    background-color: green;
+}
+#segundaSeccion{
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    background-color: yellow;
+}
+#terceraSeccion{
+    padding: 30px 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-width: 5px;
+    border: solid black;
+    margin-top: 20px;
+}

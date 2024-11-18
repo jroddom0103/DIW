@@ -1,0 +1,31 @@
+h1{
+    color:red;
+}
+
+.titulo{
+    color:aquamarine;
+}
+
+#parrafo{
+    color:blueviolet;
+}
+
+div .texto{
+    color:orange !important;
+}
+
+p{
+    color:green;
+}
+
+/**
+¿Qué color se aplica finalmente al encabezado <h1>? Explica cuál fue la regla ganadora y por qué.
+Se aplicó el darkred. Fue el estilo en línea porque tiene prevalencia sobre la asignación por clase.
+
+¿Cuál es el color del párrafo con el ID parrafo? ¿Qué regla prevalece?
+El color blueviolet. Es así porque la regla de id prevalece sobre la de la asignación mediante etiqueta, en este caso párrafo.
+
+¿Qué color tiene el párrafo con la clase texto dentro del div contenedor? Explica por qué se aplica ese color en particular.
+Se aplica el orange. Porque se aplica el !important, que es más importante que la asignación por etiqueta.
+
+*/

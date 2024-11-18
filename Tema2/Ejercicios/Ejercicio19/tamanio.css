@@ -1,0 +1,18 @@
+#primeraSeccion{
+    width: 200px;
+    height: 150px;
+    background-color: chartreuse;
+}
+
+#segundaSeccion{
+    width: 50%;
+    height: 100px;
+    background-color: aqua;
+}
+
+#terceraSeccion{
+    width: 300px;
+    min-height: 100px;
+    max-height: 200px;
+    background-color: coral;
+}

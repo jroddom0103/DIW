@@ -1,0 +1,21 @@
+#primeraSeccion{
+    border: dotted 3px blue;
+    margin: 20px;
+    padding: 10px;
+}
+
+#segundaSeccion {
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+    border-style: solid;
+    border-color: green;
+}
+
+
+#terceraSeccion{
+    border:red 4px double;
+    border-radius: 15px;
+}
+
