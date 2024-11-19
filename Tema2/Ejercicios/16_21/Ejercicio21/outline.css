@@ -1,0 +1,15 @@
+#primeraSeccion{
+    outline-style: dotted;
+    outline-color: aquamarine;
+}
+#segundaSeccion{
+    outline-width: 5px;
+    outline-color: red;
+    outline-style: solid;
+    margin-bottom: 25px;
+}
+#terceraSeccion{
+    outline-offset: 10px;
+    outline-color: greenyellow;
+    outline-style: dashed;
+}

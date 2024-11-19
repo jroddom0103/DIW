@@ -1,0 +1,15 @@
+div{
+    background-color: gray;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    height: 300px;
+}
+
+/*
+
+Anchura: 300+(15*2)+(50*2) = 430px
+Altura: 300+(15*2)+(50*2) = 430px
+
+**/
