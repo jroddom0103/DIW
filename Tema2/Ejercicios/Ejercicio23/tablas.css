@@ -1,0 +1,32 @@
+table, tr, th, td{
+    border: solid black 2px;
+    caption-side: bottom;
+    border-collapse: collapse;
+    /* border-spacing: 2px; */
+    table-layout: fixed;
+    height: 30px;
+    empty-cells: show;
+    background-color: antiquewhite;
+}
+
+tr{
+    width: 200px;
+}
+
+#cabecera{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+caption{
+    font-weight: bolder;
+    border:black solid 2px;
+    background-color: blanchedalmond;
+}
+
+.diaPar{
+    background-color: antiquewhite;
+}
+
+.diaImpar{
+    background-color: brown;
+}
