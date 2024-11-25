@@ -1,0 +1,43 @@
+div {
+    border: solid 2px black;
+    
+}
+
+
+#static {
+    position: static;
+    background-color: aqua;
+    bottom:100px;
+}
+
+#relative {
+    position: relative;
+    background-color: brown;
+    top: 20px;
+    left:20px
+}
+
+#absolute {
+    position: absolute;
+    background-color: chartreuse;
+    right:10px;
+    bottom: 80%;
+}
+
+#fixed {
+    position: fixed;
+    background-color: cadetblue;
+    top:10px;
+    left:200px;
+}
+
+#sticky {
+    position: sticky;
+    background-color: aliceblue;
+    left: 100px;
+}
+
+div div {
+    margin: 40px;
+    width: 100px;
+}

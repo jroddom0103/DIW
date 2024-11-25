@@ -1,0 +1,12 @@
+span,div,p,button{
+    border: solid black 2px;
+    margin: 20px;
+}
+
+.inline{
+    display: inline;
+}
+
+.block{
+    display: block;
+}

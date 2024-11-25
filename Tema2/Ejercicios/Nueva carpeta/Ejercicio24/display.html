@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <script>
+        function quitate(){
+            document.getElementsById('none').style.display='none';
+        }
+        
+    </script>
+    <div>div1</div>
+    <div class="inline">div2 (inline)</div>
+    <div class="inline">div3 (inline)</div>
+    <span class="block">span1 (block)</span>
+    <span class="block">span2 (block)</span>
+    <span>span3</span>
+    <p class="inline-block">parrafo1</p>
+    <p>parrafo2</p>
+    <p>parrafo3</p>
+    <button id="none">boton1 (none)</button>
+    <button id="none">boton2 (none)</button>
+    <button onclick="quitate()">boton3</button>
+</body>
+</html>
