@@ -1,11 +1,20 @@
-a:link{
-    color:green;
+a:link {
+    color: green;
 }
 
-a:visited{
-    color:aqua;
+a:visited {
+    color: aqua;
 }
 
-a:hover{
+a:hover {
     color: yellow;
+}
+
+a {
+    background-color: chocolate;
+    padding: 30px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 20px;
 }
