@@ -1,0 +1,45 @@
+div,p{
+    border: black solid 2px;
+}
+
+div{
+    background-color: cornflowerblue;
+}
+
+#bloque{
+    margin: auto;
+    width: 200px;
+}
+
+#texto{
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin:auto;
+}
+
+p{
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.izq{
+    float: right;
+}
+
+.der{
+    
+    position:absolute;
+    left: 0;
+}
+
+#textoC{
+    clear:both;
+    padding: auto;
+    height: 200px;
+    line-height: 200px;
+}

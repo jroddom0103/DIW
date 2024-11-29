@@ -1,0 +1,33 @@
+header,div,footer{
+    background-color: aqua;
+    border: 2px black solid;
+}
+
+div{
+    float:left;
+    
+    height: 200px;
+    background-color: brown;
+}
+#pie{
+    clear:both;
+}
+#extra{
+    float:left;
+}
+#col1{
+    float:right;
+}
+#col3{
+    float:right;
+}
+
+/**
+¿Qué sucede si no se usa clear?
+Que el pie de página se coloca junto a las tablas, en vez de abajo.
+
+¿Qué otros elementos además de clear pueden solucionar problemas similares?
+Ajustar la posición del elemento mediante position para colocarlo donde se necesite.
+
+
+*/
