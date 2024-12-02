@@ -1,0 +1,52 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: blue;
+}
+
+.parent {
+    font-family: 'Courier New', monospace;
+    color: red;
+}
+
+.default {
+    font-family: Verdana, sans-serif;
+    color: green;
+}
+
+.inherit {
+    font-family: inherit;
+    color: inherit;
+}
+
+.initial {
+    font-family: initial;
+    color: initial;
+}
+
+.unset {
+    font-family: unset;
+    color: unset;
+}
+
+.revert {
+    font-family: revert;
+    color: revert;
+}
+
+/**
+1. ¿Qué estilo toma el texto con inherit? ¿Por qué?
+Toma el color rojo porque hereda de la clase .parent, que tiene color rojo al tener puesta la propiedad inherit. De todas formas,
+no hace falta usar la función porque el color y la fuente ya tienen la opción de inherit por defecto.
+
+2. ¿Cómo se comporta el texto con initial? ¿Qué significa este valor?
+No tiene asignado un color, porque no hereda de nadie, por lo que es el predeterminado en negro. El initial deshabilita que herede.
+
+3. ¿Qué sucede con un unset? ¿Es diferente para propiedades heredables y no heredables?
+Que hereda al color predeterminado que tiene. En ese caso, el color rojo.
+
+4. ¿Cómo actúa revet en comparación con los otros valores?
+Lo que hace es que el efecto cascada no le afecte, por lo que escogerá el primer valor asignado. En este caso, el primer valor fue el
+color rojo.
+
+*/
