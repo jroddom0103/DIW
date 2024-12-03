@@ -1,0 +1,42 @@
+body{
+    color:red;
+}
+
+section p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.highlight{
+
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#override{
+    color: rgb(00, 88, 22);
+}
+
+h1{
+    font-size: xx-large;
+    color:inherit;
+}
+
+footer p{
+    color: blue !important;
+    color:blueviolet;
+}
+
+/**
+1. ¿Qué sucede si cambias el orden de las reglas CSS?
+Pues que se sobrescribirán los estilos de forma diferente, así que al final casi todo el texto estaría rojo.
+
+2. ¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
+Que las clases son más específicas que una etiqueta, por lo que tiene más prioridad.
+
+3. ¿Qué sucede si eliminas el !important de alguna regla?
+Que no se mantendrá el estilo con important y se podrá sobrescribir.
+
+4. ¿Qué reglas son heredadas automáticamente y cuáles necesitas especificar explícitamente?
+El color y la fuente se heredan. Hay que especificar el resto de reglas.
+
+*/
