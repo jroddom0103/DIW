@@ -1,0 +1,25 @@
+header{
+    display: flex;
+}
+
+h1{
+    
+    justify-content: start;
+}
+
+nav ul{
+    align-items: end;
+}
+
+#flex-cards{
+    display: flex;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+#flex-cards>div>p{
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+/***estilo body***/
+body{background-color: antiquewhite;}
+/***estilos header***/
+header{background-color: aliceblue;}
+h1, h2{font-weight: bolder;}
+ul{padding: 10px 20px 50px 40px;}
+.primerEstiloElemento{font-style: italic;}
+#segundo-estiloElemento{font-family: sans-serif;}
+/***estilo div***/
+div p{color:cadetblue;}
+/***estilo footer***/
+footer{font-size: xx-small;}
