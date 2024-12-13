@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatería - Contacto</title>
+
+    <!-- Patrón de diseño responsivo -->
+
+    <style>
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 13%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos pantallas más pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            main {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Estilos para móviles */
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 0.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Zapatería </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <p>Para consultas, contáctanos a través de nuestro correo: <a href="mailto:info@zapateriaejemplo.com">info@zapateria.com</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zapatería Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
