@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a5663e;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra todo el contenido horizontalmente */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distribuye los elementos uniformemente */
+    align-items: center;
+    background-color: #d2ad88;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Título del Catálogo */
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 28px;
+    color: #000;
+}
+
+/* Sección del Menú Desplegable */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.menu select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+h1{
+    top:300px;
+    position: fixed;
+    place-content: center;
+}
+
+#contenido {
+    position: fixed;
+    place-content: center;
+    top: 400px;
+}
+
+footer {
+    background-color: #4B2E1E;
+    color: #FFF;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button{
+    width: 100%;
+}

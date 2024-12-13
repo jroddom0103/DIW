@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Zapatos</title>
+
+    <!-- estilo hibrido -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a5663e;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra todo el contenido horizontalmente */
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-evenly; /* Distribuye los elementos uniformemente */
+            align-items: center;
+            background-color: #d2ad88;
+            padding: 5px 15px;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Título del Catálogo */
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 28px;
+            color: #000;
+        }
+
+        /* Sección del Menú Desplegable */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px;
+        }
+
+        .menu select {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        /* Sección de Productos */
+        .catalogo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 1200px; /* Limita el ancho del catálogo para centrar mejor */
+        }
+
+        /* Producto separado en imagen y descripción */
+        .producto {
+            display: flex;
+            justify-content: center; /* Centra las imágenes y los textos */
+            align-items: center;
+            gap: 20px; /* Espacio entre imagen y texto */
+            width: 100%;
+        }
+
+        .producto img {
+            width: 30%; /* Hacemos las imágenes más pequeñas */
+            height: auto;
+        }
+
+        .producto-texto {
+            width: 30%; /* Ajustamos el tamaño del cuadro de texto */
+            padding: 10px;
+            background-color: #f4ede5;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .producto-texto h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .producto-texto p {
+            font-size: 12px;
+        }
+
+        /* Alternar dirección para la segunda sección */
+        .producto.reverse {
+            flex-direction: row-reverse; /* Imagen a la derecha y texto a la izquierda */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div><img src="logo.png" alt="Logo" width="40"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div><img src="carrito.png" alt="Carrito" width="40"></div> <!-- Carrito o ícono adicional -->
+    </header>
+
+    <!-- Título Principal -->
+    <h1>NUESTRO CATÁLOGO</h1>
+
+    <!-- Menú Desplegable -->
+    <div class="menu">
+        <select name="categoria" id="categoriaSelect">
+        <option value="hombre" selected>Hombre</option>
+        <option value="deportivo">Deportivo</option>
+        <option value="botas">Botas</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+        </select> 
+        
+        <select name="mujer" id="mujerSelect">
+            <option value="mujer">Mujer</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+        
+        <select name="niño" id="niñoSelect">
+            <option value="niño">Niño</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+    </div>
+    
+    <!-- Sección de Productos -->
+    <div class="catalogo">
+        <!-- Producto 1: Imagen a la izquierda y descripción a la derecha -->
+        <div class="producto">
+            <img src="zapato1.png" alt="Zapato Zoom">
+            <div class="producto-texto">
+                <h2>Zoom</h2>
+                <p>Las zapatillas Zoom son zapatillas deportivas diseñadas para la velocidad y la comodidad.</p>
+            </div>
+        </div>
+
+        <!-- Producto 2: Imagen a la derecha y descripción a la izquierda -->
+  
+        <div class="catalogo">
+            <!-- Producto 1: Imagen a la izquierda y descripción a la derecha -->
+            <div class="producto">
+                <img src="zapatoBlanco.png" alt="TurboPower">
+                <div class="producto-texto">
+                    <h2>Turbo Power</h2>
+                    <p>Las zapatillas Turbo power son lo mejor del mercado por su comodidad y adaptacion a la fisionomia del pié.</p>
+                </div>
+            </div>

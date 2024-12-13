@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="estilo">
+
+    <title>Zapatería - Contacto</title>
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div><img src="logo.png" alt="Logo" width="40"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+            </ul>
+        </nav>
+        <div><img src="carrito.png" alt="Carrito" width="40"></div> <!-- Carrito o ícono adicional -->
+    </header>
+
+    <button id="cambiarEstilo">Cambiar Estilo</button>  
+
+    <script>
+        const boton = document.getElementById('cambiarEstilo');
+        const enlaceEstilo = document.getElementById('estilo');
+
+        boton.addEventListener('click', function() {
+            // Cambia el href entre 'estilo1.css' y 'estilo2.css'
+            if (enlaceEstilo.getAttribute('href') === 'styles.css') {
+                enlaceEstilo.setAttribute('href', 'dark-mode.css');
+            } else {
+                enlaceEstilo.setAttribute('href', 'styles.css');
+            }
+        });
+    </script>
+
+    <!-- Título Principal -->
+    <h1>CONTACTO</h1>
+
+    <p id="contenido">Para consultas, contáctanos a través de nuestro correo: <a href="mailto:info@zapateriaejemplo.com">info@zapateria.com</a></p>
+
+    <footer>
+        <p>&copy; 2024 Zapatería - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
