@@ -1,0 +1,10 @@
+header{
+    background: url('imagenes/libros.jpg');
+    height: 400px;
+}
+h1{
+    text-align: center;
+    color: wheat;
+    position: relative;
+    top: 40%;
+}
