@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 16</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <video controls width="640">
-        <source>
+    <video id="reproductor" width="640" poster="">
+        <source src="VideoMP4/video.mp4" type="video/mp4">
+        <source src="VideoWebM/video.webm" type="video/webm">
+        <source src="VideoAVI/video.avi" type="video/avi">
 
-
+        Tu navegador no soporta la reproducción del vídeo.
     </video>
-    
+
+    <!-- Controles personalizados -->
+    <div class="controls">
+        <!-- Botón de reproducción/pausa -->
+        <button id="pausa">▶️</button>
+
+        <!-- Barra de progreso -->
+        <div class="progreso-bar" id="barra_progreso">
+            <div class="progreso">
+                <div class="progreso-filled" id="progreso"></div>
+            </div>
+        </div>
+
+        <!-- Control de volumen -->
+        <div class="volumen-control">
+            🔊
+            <input type="range" id="volumen" class="volumen-slider" min="0" max="1" step="0.1" value="1">
+        </div>
+
+        <!-- Tiempo actual/duracion -->
+        <div id="tiempo">00:00 / 00:00</div>
+
+        <!-- Agregar estos enlaces justo antes de cerrar div.controls -->
+        <div class="video-links">
+            <a href="VideoMP4/video.mp4" class="link_descarga" download="video1">Descargar Video</a>
+            <a href="VideoMP4/video.mp4" target="_blank" class="link_nueva_ventana">Abrir en Nueva Ventana</a>
+        </div>
+
+    </div>
+
+    <script>
+        const reproductor = document.getElementById('reproductor');
+const pausaBtn = document.getElementById('pausa');
+const barra_progreso = document.getElementById('barra_progreso');
+const progresoFilled = document.getElementById('progreso');
+const volumenSlider = document.getElementById('volumen');
+const tiempoDisplay = document.getElementById('tiempo');
+
+function formattiempo(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+// Evento play/pause
+pausaBtn.addEventListener('click', () => {
+    if (reproductor.paused) {
+        reproductor.play();
+        pausaBtn.textContent = '⏸️';
+    } else {
+        reproductor.pause();
+        pausaBtn.textContent = '▶️';
+    }
+});
+
+// Actualizar progreso del video
+reproductor.addEventListener('timeupdate', () => {
+    const percent = (reproductor.currentTime / reproductor.duration) * 100;
+    progresoFilled.style.width = `${percent}%`;
+    tiempoDisplay.textContent = `${formattiempo(reproductor.currentTime)} / ${formattiempo(reproductor.duration)}`;
+});
+
+// Control de progreso al hacer clic
+barra_progreso.addEventListener('click', (e) => {
+    const rect = barra_progreso.getBoundingClientRect();
+    const clickPosition = (e.clientX - rect.left) / rect.width;
+    reproductor.currentTime = reproductor.duration * Math.min(Math.max(clickPosition, 0), 1);
+});
+
+// Control de volumen
+volumenSlider.addEventListener('input', (e) => {
+    reproductor.volume = parseFloat(e.target.value);
+});
+
+    </script>
+
 </body>
+
 </html>

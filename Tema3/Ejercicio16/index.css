@@ -1,0 +1,92 @@
+video{
+    border: black 2px solid;
+    height: 480px;
+    width: 640px;
+}
+
+/* Barra de controles */
+.controls {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botones de control */
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Barra de progreso */
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-filled {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.1s;
+}
+
+/* Volumen */
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.volume-slider {
+    width: 100px;
+}
+
+.video-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.link_descarga,
+.link_nueva_ventana {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.link_descarga {
+    background-color: #2196F3;
+}
+
+.link_nueva_ventana {
+    background-color: #4CAF50;
+}
+
+.link_descarga:hover,
+.link_nueva_ventana:hover {
+    opacity: 0.9;
+}
