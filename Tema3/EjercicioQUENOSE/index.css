@@ -1,0 +1,31 @@
+@keyframes button {
+    0% {
+        background-color: red;
+        transform: rotate(60deg);
+    }
+
+    25% {
+        background-color: yellow;
+        transform: rotate(120deg);
+    }
+
+    100% {
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        background-color: green;
+        transform: rotate(240deg);
+    }
+
+}
+
+#bt {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: button 0.5s infinite;
+    border: none;
+    cursor: pointer;
+}
