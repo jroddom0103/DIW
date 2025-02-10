@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        #container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin: 0;
+            display: inline-block;
+            transform-origin: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="letter">p</h1>
+    </div>
+
+<script>
+    gsap.timeline({ delay: 1 }).to(".letter", {duration: 4, x: window.innerWidth - 50,scale: 2,color: "#ff0000",ease: "none"}).to(".letter", {duration: 4,x: 0,scale: 4,color: "#ffff00",ease: "none"}).to(".letter", {delay: 2,duration: 4,x: window.innerWidth - 50,scale: 6,color: "#00ff00",ease: "none"}).to(".letter", {duration: 4,x: 0,scale: 8,color: "#0000ff",ease: "none"});
+</script>
+
+</body>
+
+</html>

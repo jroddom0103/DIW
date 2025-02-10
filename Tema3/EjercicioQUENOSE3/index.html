@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio QUENOSE3</title>
+</head>
+<div class="box">Hola</div>
+
+<body>
+    <script>
+        const box = document.querySelector('.box');
+        let pos = 0;
+
+        function animar() {
+            pos += 1;
+            // Corrección del template literal usando comillas backtick (`) 
+            box.style.transform = `translateX(${pos}px)`;
+
+            // Continúa la animación hasta llegar a 500px
+            if (pos < 500) {
+                requestAnimationFrame(animar);
+                
+            }
+        }
+
+        // Iniciar la animación cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', animar);
+    </script>
+</body>
+
+</html>

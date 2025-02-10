@@ -1,0 +1,10 @@
+.texto{
+    overflow: hidden;
+    animation: escribir 10s steps(50);
+}
+
+@keyframes escribir {
+    from {width: 0%;}
+    to {width: 50;}
+}
+
