@@ -12,10 +12,6 @@
     transition: box-shadow 300ms ease;
   }
   
-  details:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-  
   summary {
     padding: 15px 20px;
     cursor: pointer;
@@ -26,14 +22,6 @@
     font-weight: bold;
     position: relative;
     transition: background-color 300ms ease;
-  }
-  
-  summary:hover {
-    background: linear-gradient(to right, #ebebeb, #d5d5d5);
-  }
-  
-  summary::-webkit-details-marker {
-    display: none;
   }
   
   details[open] summary::before {
