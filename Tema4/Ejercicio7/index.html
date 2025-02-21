@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <p id="elemento">Hola</p>
+</body>
+</html>
+
+<script>
+    const userAgent = navigator.userAgent;
+    if(userAgent.includes('Edg')){
+        document.getElementById('elemento').innerHTML = 'Estás usando Edge';
+        document.body.style.backgroundColor = 'blue';
+    }else if(userAgent.includes('Chrome')){
+        document.getElementById('elemento').innerHTML = 'Estás usando Chrome';
+        document.body.style.backgroundColor = 'yellow';
+    }
+</script>
