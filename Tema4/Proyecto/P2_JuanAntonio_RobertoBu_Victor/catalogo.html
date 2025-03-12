@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Zapatos</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/original.css">
+    <!-- Botón de cambio de tema -->
+    <div style="text-align: center; margin: 10px;">
+        <button id="theme-toggle">Cambiar Estilo</button>
+    </div>
+
+    <audio id="soundEffectLight" src="audio/cambiar-tema.mp3"></audio>
+    <audio id="soundEffectDark" src="audio/cambiar-tema.mp3"></audio>
+
+
+    <script>
+        const boton = document.getElementById('cambiarEstilo');
+        const enlaceEstilo = document.getElementById('estilo');
+        const soundEffectLight = document.getElementById('soundEffectLight');
+        const soundEffectDark = document.getElementById('soundEffectDark');
+
+        document.getElementById('theme-toggle').addEventListener('click', function () {
+            const currentTheme = document.getElementById('theme-stylesheet');
+            if (currentTheme.getAttribute('href') === 'css/original.css') {
+                currentTheme.setAttribute('href', 'css/dark-modeV.css');
+                soundEffectDark.play();
+            } else {
+                currentTheme.setAttribute('href', 'css/original.css');
+                soundEffectLight.play();
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div><img src="imagenes/zapato.svg" alt="Logo" width="40" class="logo-zapato"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreNostros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div><img src="imagenes/carrito-de-compras.svg" alt="Carrito" width="40" class=logo-carrito></div>
+    </header>
+
+    <!-- Título Principal -->
+    <h1>NUESTRO CATÁLOGO</h1>
+
+    <!-- Menú Desplegable -->
+    <div class="menu">
+        <select name="categoria" id="categoriaSelect">
+            <option value="hombre" selected>Hombre</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+
+        <select name="mujer" id="mujerSelect">
+            <option value="mujer">Mujer</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+
+        <select name="niño" id="niñoSelect">
+            <option value="niño">Niño</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+    </div>
+
+    <!-- Sección de Productos -->
+    <div class="catalogo">
+        <!-- Producto 1: Imagen a la izquierda y descripción a la derecha -->
+        <div class="producto">
+            <img src="imagenes/zoom.png" alt="Zapato Zoom">
+            <div class="producto-texto">
+                <h2>Zoom</h2>
+                <p>Las zapatillas Zoom son zapatillas deportivas diseñadas para la velocidad y la comodidad.</p>
+            </div>
+        </div>
+
+        <!-- Producto 2: Imagen a la derecha y descripción a la izquierda -->
+        <div class="producto reverse">
+            <img src="imagenes/kinetik.png" alt="Zapato Kinetik Fit">
+            <div class="producto-texto">
+                <h2>Kinetik Fit</h2>
+                <p>Las Kinetik Fit son zapatos deportivos diseñados con tecnología avanzada para ajustes precisos y una
+                    experiencia de alto rendimiento.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
